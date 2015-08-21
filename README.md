@@ -4,6 +4,7 @@
 
 Simple Javascript ORM
 
+
 ## :snowflake: Getting Started
 
 ### Installation
@@ -56,24 +57,24 @@ console.log(task.isCompleted());  // false
 var requestData = task.toJSON();
 ```
 
+
 ## :snowflake: API
+
+**Create a model class**
 
 ```js
 snowstorm.create(name, properties);
 ```
 
-Create a model class
-
 ---
+
+**Define a property to be used on the model**
 
 ```js
 snowstorm.Properties.string
 // or
 snowstorm.Properties.string(attr, [arguments])
 ```
-
-Define a property to be used on the model
-
 
 | Properties                     | Arguments            |
 | ------------------------------ | -------------------- |
@@ -84,6 +85,37 @@ Define a property to be used on the model
 | `snowstorm.Properties.object`  | `attr`               |
 | `snowstorm.Properties.date`    | `attr`, `format`     |
 | `snowstorm.Properties.model`   | `attr`, `modelClass` |
+
+---
+
+**Create a custom property**
+
+```js
+var Moment = require('moment'); // https://github.com/moment/moment/
+
+function moment (attr) {
+	return {
+		attr: attr,
+		construct: function (d) {
+			if (typeof d === 'undefined') {
+				return null;
+			}
+			return Moment(d);
+		},
+		destruct: function (d) {
+            if (!d) {
+                return null;
+            }
+		    return d.toISOString();
+		}
+	}
+};
+
+// Usage
+var Todo = snowstorm.create('Task', {
+	dueAt: moment
+});
+```
 
 
 ## :snowflake: Running tests
