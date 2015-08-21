@@ -15,6 +15,10 @@ describe('Properties', function() {
                 expect(prop.construct()).toEqual(null);
             });
 
+            it('should convert null to null', function () {
+                expect(prop.construct(null)).toEqual(null);
+            });
+
             it('should convert a string to a string', function () {
                 expect(prop.construct('test')).toEqual('test');
             });
@@ -49,6 +53,10 @@ describe('Properties', function() {
         describe('-> construct', function () {
             it('should convert undefined to null', function () {
                 expect(prop.construct()).toEqual(null);
+            });
+
+            it('should convert null to null', function () {
+                expect(prop.construct(null)).toEqual(null);
             });
 
             it('should convert a number to a number', function () {
@@ -94,6 +102,10 @@ describe('Properties', function() {
                 expect(prop.construct()).toEqual(false);
             });
 
+            it('should convert null to a boolean', function () {
+                expect(prop.construct(null)).toEqual(false);
+            });
+
             it('should convert a boolean to a boolean', function () {
                 expect(prop.construct(false)).toEqual(false);
                 expect(prop.construct(true)).toEqual(true);
@@ -131,6 +143,10 @@ describe('Properties', function() {
         describe('-> construct', function () {
             it('should convert undefined to null', function () {
                 expect(prop.construct()).toEqual(null);
+            });
+
+            it('should convert null to null', function () {
+                expect(prop.construct(null)).toEqual(null);
             });
 
             it('should convert an array to an array', function () {
@@ -171,6 +187,10 @@ describe('Properties', function() {
         describe('-> construct', function () {
             it('should convert undefined to null', function () {
                 expect(prop.construct()).toEqual(null);
+            });
+
+            it('should convert null to null', function () {
+                expect(prop.construct(null)).toEqual(null);
             });
 
             it('should convert an object to an object', function () {
@@ -214,6 +234,10 @@ describe('Properties', function() {
                 expect(prop.construct()).toEqual(null);
             });
 
+            it('should convert null to null', function () {
+                expect(prop.construct(null)).toEqual(null);
+            });
+
             it('should convert an isoformat string to a date', function () {
                 var expected = new Date(dateStr);
                 expect(prop.construct(dateStr).getTime()).toEqual(expected.getTime());
@@ -254,6 +278,10 @@ describe('Properties', function() {
         describe('-> construct', function () {
             it('should convert undefined to null', function () {
                 expect(prop.construct()).toEqual(null);
+            });
+
+            it('should convert null to null', function () {
+                expect(prop.construct(null)).toEqual(null);
             });
 
             it('should create a new model instance', function () {
