@@ -1,0 +1,23 @@
+{
+  "name": "snowstorm",
+  "version": "0.0.0",
+  "description": "Simple Javascript ORM",
+  "main": "snowstorm.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trsanders/snowstorm.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Node",
+    "ORM"
+  ],
+  "author": "Theisen Sanders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trsanders/snowstorm/issues"
+  }
+}
