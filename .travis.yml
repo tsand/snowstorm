@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
+deploy:
+  provider: npm
+  email: theisen.sanders@gmail.com
+  api_key:
+    secure: ZtRICD0YqnFmMitLstVx5kD0tedv/6hpeRPQSUWpC+LEFhPAxYjnPUTu/j407NmPZt1Y6n2jPP+PtqiFm0qqRGuTrlIqHDIoYKOQPiB8V1d9+suIGUDO5cQ52iCQy2Z/72iuWI7iO78ZPev3zDBOVNtgXmmrnlSpGHmG/A4/aXju8eIhJlLy3Ncpyea++c0nOf/IiLs+GtMPmV0ILQPBgFNsNOrTZSnAS8T+qafwNNdU1MVkeYdhp8qxsAe0wwN6hs2W8cwepZOXMioQoBRUTxcMwUmtCOoJGN9jh9+ZYP3QocJuOpRFFFv3hz/sA64wBpCUxyfSzXV7xvXGIvBKLUAYNt6XP/CSw96dL6kYA3LYNwnnk2fiNhnaZ6KrEiXTSEy69+cOaTcisj2dmSiVcYkDLU8q2Z5IJ8uROJrv2qqkC/dY6PZyLR3TJT14Z5BZWgr4OSyAJ2iQOiw/3wL345D1PxM8mo7D55CYgShlnItsgT+KPLb+3e1ENcw7YJXxa38qY3qGB9JyD50eexild+qg0L9YhPx2Iahkcn+5Cal4XADcd2yl6rND8DodispcQRXFd4FT9LeYyXmZhAO7HMwV2EaKyD7UeMoC0alBHNT+c4UB1kFYBkw9wr/Apyo3ZVksCKMNGznbiKIKMus+ftBjEEIo1/60Qm1ystcZAXA=
+  on:
+    tags: true
+    repo: trsanders/snowstorm
