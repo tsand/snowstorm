@@ -2,7 +2,7 @@
 
 Simple Javascript ORM
 
-## Getting Started
+## :snowflake: Getting Started
 
 ### Installation
 
@@ -43,18 +43,18 @@ var responseData = {
 var task = new Task(responseData);
 ```
 
-Access the properties/methods of the task, or convert to JSON to send back to the server
+Access the properties/methods of the task or convert to JSON to send back to the server
 
 ```js
-console.log(task.title);  // Task out the trash
-console.log(task.createdAt);  // Thu Aug 20 2015 04:00:00 GMT-0600 (MDT)
+console.log(task.title);          // Task out the trash
+console.log(task.createdAt);      // Thu Aug 20 2015 04:00:00 GMT-0600 (MDT)
 console.log(task.isCompleted());  // false
 
 // Send back to server
 var requestData = task.toJSON();
 ```
 
-## API
+## :snowflake: API
 
 ```js
 snowstorm.create(name, properties);
@@ -67,7 +67,7 @@ Create a model class
 ```js
 snowstorm.Properties.string
 // or
-snowstorm.Properties.string(attr)
+snowstorm.Properties.string(attr, [arguments])
 ```
 
 Define a property to be used on the model
@@ -84,7 +84,8 @@ Define a property to be used on the model
 | `snowstorm.Properties.model`   | `attr`, `modelClass` |
 
 
-## Running tests
+## :snowflake: Running tests
 
 `npm install`
+
 `npm test`
