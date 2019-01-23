@@ -1,6 +1,6 @@
 ![snowstorm](logo.png)
 
-# snowstorm [![Build Status](https://travis-ci.org/theisensanders-wf/snowstorm.svg?branch=master)](https://travis-ci.org/theisensanders-wf/snowstorm) [![npm version](https://badge.fury.io/js/snowstorm.svg)](http://badge.fury.io/js/snowstorm)
+# snowstorm [![npm version](https://badge.fury.io/js/snowstorm.svg)](http://badge.fury.io/js/snowstorm)
 
 Simple Javascript ORM
 
