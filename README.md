@@ -1,6 +1,7 @@
-![snowstorm](logo.png)
+# snowstorm
 
-# snowstorm [![npm version](https://badge.fury.io/js/snowstorm.svg)](http://badge.fury.io/js/snowstorm)
+[![npm version](https://img.shields.io/npm/v/snowstorm)](https://www.npmjs.com/package/snowstorm)
+[![Node.js Build](https://github.com/tsand/snowstorm/workflows/Node.js%20Build/badge.svg)](https://github.com/tsand/snowstorm/actions)
 
 Simple Javascript ORM
 
