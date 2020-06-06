@@ -5,7 +5,6 @@
 
 Simple Javascript ORM
 
-
 ## :snowflake: Getting Started
 
 ### Installation
